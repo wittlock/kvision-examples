@@ -5,6 +5,7 @@ import io.kvision.BootstrapCssModule
 import io.kvision.BootstrapModule
 import io.kvision.CoreModule
 import io.kvision.html.div
+import io.kvision.html.span
 import io.kvision.i18n.DefaultI18nManager
 import io.kvision.i18n.I18n
 import io.kvision.i18n.I18n.tr
@@ -29,6 +30,8 @@ class App : Application() {
 
         root("kvapp") {
             div(tr("This is a localized message."))
+            div("This is not a localized message")
+            span("Kalle är en span")
         }
     }
 }
